@@ -47,13 +47,13 @@ public class ThreeActivity extends Activity implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-//        switch (v.getId()) {
-//           case  R.id.btn_sd:
-//               String sdPath = getSDPath();
-//               Log.i(TAG, "onClick: "+sdPath);
-//           break;
-//
-//        }
+        switch (v.getId()) {
+           case  R.id.btn_sd:
+               String sdPath = getSDPath();
+               Log.i(TAG, "onClick: "+sdPath);
+           break;
+
+        }
     }
 
     private String getSDPath() {
