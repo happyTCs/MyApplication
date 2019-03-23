@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <!--日间模式-->
+
+    <!--标题栏背景颜色-->
+    <color name="theme_title_bar">#7B8EE9</color>
+
+    <!--描边 按钮的-->
+    <color name="stroke_default">#D8E2E9</color>
+    <color name="stroke_select">#85D3EF</color>
+    <color name="stroke_press">#7B8EE9</color>
+
+    <!--文字主色 //右侧文字-->
+    <color name="color_text_main">#333333</color>
+    <!--文字辅色 //左侧文字 主要引用666666-->
+    <color name="color_text_six">#666666</color>
+    <color name="color_text_auxiliary">#999999</color>
+    <color name="color_text_select">#21A4FF</color>
+
+    <!--底色 //页面背景颜色-->
+    <color name="bg_default">#E8EEF3</color>
+    <!--默认选择色-->
+    <color name="bg_select">#C1E9F7</color>
+    <!--白色底色-->
+    <color name="bg_white">#FFFFFF</color>
+    <!--标题底色-->
+    <!--标题底色 list头部-->
+    <color name="bg_title_bar">#F5F5F5</color>
+    <!--item底色 白色-->
+    <color name="bg_item_white">#FFFFFF</color>
+    <!--item底色 默认色-->
+    <color name="bg_item_default">#D8E2E9</color>
+    <!--item选中-->
+    <color name="bg_item_select">#C1E9F7</color>
+    <!--item按下-->
+    <color name="bg_item_press">#e8e9eb</color>
+
+    <!--主题色按钮-->
+    <!--按钮默认-->
+    <color name="button_default">#4D93FD</color>
+    <!--按钮按下-->
+    <color name="button_press">#387BE1</color>
+    <!--按钮选中-->
+    <color name="button_select">#3F89FA</color>
+    <!--按钮不可点-->
+    <color name="button_no_point">#C8D2D8</color>
+
+    <!--白色按钮-->
+    <!--按钮按下-->
+    <color name="button_white_press">#EDF4FF</color>
+
+    <!--输入框hint-->
+    <color name="edit_text_hint">#BBBBBB</color>
+
+
+    <!--白色-->
+    <color name="color_white">#FFFFFF</color>
+    <!--红色-->
+    <color name="color_red">#E0463C</color>
+    <!--蓝色-->
+    <color name="color_blue">#4D93FD</color>
+    <!--线 分割线 Space view的颜色-->
+    <color name="divide_line">#D8E2E9</color>
+
+    <!--loading背景-->
+    <color name="bg_loading">#b0000000</color>
+    <!--toast背景-->
+    <color name="bg_toast">#000000</color>
+
+    <color name="colorSix3">#333333</color>
+    <color name="colorSix9">#999999</color>
+    <color name="colorThreeF7">#F7F7F7</color>
+    <color name="colorSixF">#FFFFFF</color>
+</resources>

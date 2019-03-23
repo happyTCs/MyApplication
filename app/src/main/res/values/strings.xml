@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">China Post</string>
+    <string name="bounce_dlv">退回妥投</string>
+
+    <string name="click_speak">点击开始说话</string>
+    <string name="baidu_voice_hint">核心技术由百度语音提供</string>
+
+</resources>
