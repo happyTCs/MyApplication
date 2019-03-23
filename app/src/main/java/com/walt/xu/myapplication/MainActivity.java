@@ -128,40 +128,40 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.tv_secornd_fm:
-                Intent intent = new Intent();
-                intent.setClass(this, TwoActivity.class);
-                startActivityForResult(intent, 2);
-                break;
-            case R.id.tv_save_file:
-                ArrayList<String> strList = new ArrayList<>();
-                strList.add(0, "lsy");
-                FileKit.save(this, strList, TYPE_SAVE);
-                SharedPreferenceUtils.setStringDataIntoSP("heartbeatlog", "lsykey", "lsyvalue");
-
-                break;
-            case R.id.tv_get_file:
-//                ArrayList<String> str = (ArrayList<String>) FileKit.getObject(this, TYPE_SAVE);
-//                String stringValueFromSP = SharedPreferenceUtils.getStringValueFromSP("heartbeatlog", "lsykey");
-//                Log.i(TAG, "onClick: " + "-----" + str + "----------" + stringValueFromSP);
-
-                // 开始定位
-                LocationUtils mLocationUtils = LocationUtils.getInstance();
-                mLocationUtils.setInstance(getApplicationContext());
-                mLocationUtils.initLocation();
-                String lat = SharedPreferenceUtils.getStringValueFromSP("Location", "latitude");
-
-                Toast.makeText(this,"lat:"+lat,Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.tv_first_fm:
-                Intent intent1 = new Intent();
-                intent1.setClass(this, ThreeActivity.class);
-                startActivity(intent1);
-                break;
-            default:
-                break;
-        }
+//        switch (v.getId()) {
+//            case R.id.tv_secornd_fm:
+//                Intent intent = new Intent();
+//                intent.setClass(this, TwoActivity.class);
+//                startActivityForResult(intent, 2);
+//                break;
+//            case R.id.tv_save_file:
+//                ArrayList<String> strList = new ArrayList<>();
+//                strList.add(0, "lsy");
+//                FileKit.save(this, strList, TYPE_SAVE);
+//                SharedPreferenceUtils.setStringDataIntoSP("heartbeatlog", "lsykey", "lsyvalue");
+//
+//                break;
+//            case R.id.tv_get_file:
+////                ArrayList<String> str = (ArrayList<String>) FileKit.getObject(this, TYPE_SAVE);
+////                String stringValueFromSP = SharedPreferenceUtils.getStringValueFromSP("heartbeatlog", "lsykey");
+////                Log.i(TAG, "onClick: " + "-----" + str + "----------" + stringValueFromSP);
+//
+//                // 开始定位
+//                LocationUtils mLocationUtils = LocationUtils.getInstance();
+//                mLocationUtils.setInstance(getApplicationContext());
+//                mLocationUtils.initLocation();
+//                String lat = SharedPreferenceUtils.getStringValueFromSP("Location", "latitude");
+//
+//                Toast.makeText(this,"lat:"+lat,Toast.LENGTH_SHORT).show();
+//                break;
+//            case R.id.tv_first_fm:
+//                Intent intent1 = new Intent();
+//                intent1.setClass(this, ThreeActivity.class);
+//                startActivity(intent1);
+//                break;
+//            default:
+//                break;
+//        }
     }
 
     @Override

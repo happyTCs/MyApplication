@@ -148,77 +148,77 @@ public class TwoActivity extends Activity implements View.OnClickListener{
     }
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btn_test:
-                onTest();
-                break;
-            case R.id.tv_two_back:
-                setResult(2);
-                finish();
-                break;
-            case R.id.btn_get_notification:
-//                count++;
-//                getNotification();
-                getAlertDialog();
-                break;
-//            case R.id.fab_first:
-//                float toDegree = reverse?-180f:180f;
-//                ObjectAnimator animator = ObjectAnimator
-//                        .ofFloat(v,"rotation",0.0f,toDegree)
-//                        .setDuration(400);
-//                animator.start();
-//                reverse =! reverse;
+//        switch (v.getId()) {
+//            case R.id.btn_test:
+//                onTest();
 //                break;
-           case  R.id.iv_jiekou:
-//               Employee employee = new Employee();
-//               employee.zhece(new Boss(),employee);
-//               employee.doSometing();
-               MyContent myContent = new MyContent();
-                myContent.getString(new MyContent.CallBack() {
-                    @Override
-                    public void getLetter(String str) {
-                        Log.i(TAG, "getLetter: "+str);
-                    }
-                });
-               break;
-            case R.id.btn_coordinate:
-//                Intent intent = new Intent(this, CoordinateActivity.class);
-//                startActivity(intent);
-//                2、实例化Retrofit
-                Retrofit retrofit = new Retrofit.Builder().baseUrl(Constant.URL_BASE).build();
-//                3、通过Retrofit实例创建接口服务对象
-                RequestServices requestServices = retrofit.create(RequestServices.class);
-//                4、接口服务对象调用接口中方法，获得Call对象
-                Call<ResponseBody> call = requestServices.getString();
-//                5、Call对象执行请求（异步、同步请求）
-                call.enqueue(new Callback<ResponseBody>() {
-                    @Override
-                    public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                        if (response.isSuccess()) {
-                            try {
-
-                                String result = response.body().string();
-                                Log.i(TAG, "onResponse: "+result);
-                                //onResponse方法是运行在主线程也就是UI线程的，所以我们可以在这里
-                                //直接更新UI
-                                mBinding.tvTwoBack.setText(result);
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            }
-                        }
-                    }
-
-                    @Override
-                    public void onFailure(Call<ResponseBody> call, Throwable t) {
-                        Log.i(TAG, "onFailure: ");
-                    }
-                });
-                break;
-            case R.id.btn_dialog:
-//                showAlertDialog();
-                generate();
-                break;
-        }
+//            case R.id.tv_two_back:
+//                setResult(2);
+//                finish();
+//                break;
+//            case R.id.btn_get_notification:
+////                count++;
+////                getNotification();
+//                getAlertDialog();
+//                break;
+////            case R.id.fab_first:
+////                float toDegree = reverse?-180f:180f;
+////                ObjectAnimator animator = ObjectAnimator
+////                        .ofFloat(v,"rotation",0.0f,toDegree)
+////                        .setDuration(400);
+////                animator.start();
+////                reverse =! reverse;
+////                break;
+//           case  R.id.iv_jiekou:
+////               Employee employee = new Employee();
+////               employee.zhece(new Boss(),employee);
+////               employee.doSometing();
+//               MyContent myContent = new MyContent();
+//                myContent.getString(new MyContent.CallBack() {
+//                    @Override
+//                    public void getLetter(String str) {
+//                        Log.i(TAG, "getLetter: "+str);
+//                    }
+//                });
+//               break;
+//            case R.id.btn_coordinate:
+////                Intent intent = new Intent(this, CoordinateActivity.class);
+////                startActivity(intent);
+////                2、实例化Retrofit
+//                Retrofit retrofit = new Retrofit.Builder().baseUrl(Constant.URL_BASE).build();
+////                3、通过Retrofit实例创建接口服务对象
+//                RequestServices requestServices = retrofit.create(RequestServices.class);
+////                4、接口服务对象调用接口中方法，获得Call对象
+//                Call<ResponseBody> call = requestServices.getString();
+////                5、Call对象执行请求（异步、同步请求）
+//                call.enqueue(new Callback<ResponseBody>() {
+//                    @Override
+//                    public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+//                        if (response.isSuccess()) {
+//                            try {
+//
+//                                String result = response.body().string();
+//                                Log.i(TAG, "onResponse: "+result);
+//                                //onResponse方法是运行在主线程也就是UI线程的，所以我们可以在这里
+//                                //直接更新UI
+//                                mBinding.tvTwoBack.setText(result);
+//                            } catch (IOException e) {
+//                                e.printStackTrace();
+//                            }
+//                        }
+//                    }
+//
+//                    @Override
+//                    public void onFailure(Call<ResponseBody> call, Throwable t) {
+//                        Log.i(TAG, "onFailure: ");
+//                    }
+//                });
+//                break;
+//            case R.id.btn_dialog:
+////                showAlertDialog();
+//                generate();
+//                break;
+//        }
     }
     //生成.apatch
     private void generate() {
