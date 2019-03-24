@@ -157,6 +157,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tv_first_fm:
                 Intent intent1 = new Intent();
                 intent1.setClass(this, ThreeActivity.class);
+                Toast.makeText(getApplicationContext(),"跳到第三个activity",Toast.LENGTH_SHORT).show();
                 startActivity(intent1);
                 break;
             default:
